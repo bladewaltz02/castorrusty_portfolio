@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  
+<style>
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        .progress-container {
+            text-align: center;
+        }
+
+        .progress-item {
+            margin-bottom: 10px;
+        }
+
+        .progress-label {
+            display: inline-block;
+            width: 80px;
+            text-align: left;
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        .progress-bar {
+            display: inline-block;
+            width: 200px;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            display: block;
+            height: 100%;
+            background-color: #4caf50;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script>
+        function scrollToCarousel() {
+            document.getElementById("myCarousel").scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function hideButton() {
+            var button = document.getElementById("invisibleButton");
+            button.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+  
+  <video autoplay loop muted playsinline>
+    <source src="assets/videobg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+  
+    <h1 class="text text-light display-1">Portfolio</h1>
+  
+<nav class="navbar">
+    <ul class="nav spread-nav">
+        <li class="nav-item">
+            <a href="#who">Trivia</a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:void(0);" onclick="scrollToCarousel()">Hobbies</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about">About</a>
+        </li>
+    </ul>
+</nav>
+  
+  
+<center>
+ <div class="container-base">
+    <div class="row">
+        <div class="col-md-6 col-xs-12" style="margin-left:10px;"><br>
+            <div class="card card1" style="height: 360px; width:400px; display: flex; box-shadow:0 0 20px rgba(0,0,0,0.1);">
+              <div class="col">
+              <div class="row">
+              <div class="col-6 pt-3">
+                    <img src="assets/mypic.jpg" alt="Image 1" style="max-width: 100%; height: 100%; padding-left:10px;">
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <h5 class="card-title pt-3">Rusty Castor</h5>
+                    <p class="card-text" style="text-align: justify; text-justify: newspaper; margin-right:20px;">
+                        I am a passionate IT student with a strong desire to explore the ever-evolving world of technology. My enthusiasm for problem-solving</p>
+                </div>
+              </div>
+                <p class="card-text" style="text-align: justify; text-justify: newspaper;margin-left:20px; margin-right:20px;">
+                  capability and a keen interest in software development drive me to learn and adapt in this dynamic field. I am committed to staying at the forefront of innovation and contributing to cutting-edge solutions.</p>
+              </div>
+            </div>
+        </div>
+      
+      
+            <div class="col-md-5">
+                <div class="progress-container" style="margin-left: 80px;">
+                    <div class="progress-item">
+                        <span class="progress-label">C++</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <span class="progress-label">Java</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <span class="progress-label">Python</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <span class="progress-label">HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <span class="progress-label">CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <span class="progress-label">JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 20%;"></div>
+                        </div>
+                    </div>
+      
+                    <div class="progress-item">
+                        <span class="progress-label">PHP</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+<section id="who" class="container" style="width: 720px;">
+    <div class="d-flex justify-content-center align-items-center">
+
+        <div class="accordion mr-3" id="economyAccordion">
+            <div class="card">
+                <div class="card-header" id="economyHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#economyCollapse" aria-expanded="true" aria-controls="economyCollapse">
+                            Economy
+                        </button>
+                    </h5>
+                </div>
+                <div id="economyCollapse" class="collapse show" aria-labelledby="economyHeading" data-parent="#economyAccordion">
+                    <div class="card-body">
+                        <img src="assets/eco.jpg" class="card-img-top" style="height:180px;" alt="Image 1">
+                        <p class="card-text">I am from poor family from San Ildefonso, Bulacan and Meycauayan, Bulacan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion mr-3" id="religionAccordion">
+            <div class="card">
+                <div class="card-header" id="religionHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#religionCollapse" aria-expanded="false" aria-controls="religionCollapse">
+                            Religion
+                        </button>
+                    </h5>
+                </div>
+                <div id="religionCollapse" class="collapse" aria-labelledby="religionHeading" data-parent="#religionAccordion">
+                    <div class="card-body">
+                        <img src="assets/religion.jpeg" class="card-img-top" alt="Image 2">
+                        <p class="card-text">I am a member of Church of Christ. At the locale of Tagumpay, Bulacan East</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion" id="dreamsAccordion">
+            <div class="card">
+                <div class="card-header" id="dreamsHeading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#dreamsCollapse" aria-expanded="false" aria-controls="dreamsCollapse">
+                            My Other Dream
+                        </button>
+                    </h5>
+                </div>
+                <div id="dreamsCollapse" class="collapse" aria-labelledby="dreamsHeading" data-parent="#dreamsAccordion">
+                    <div class="card-body">
+                        <img src="assets/dreams.jpg" class="card-img-top" alt="Image 3">
+                        <p class="card-text">Aside from finishing Information Technology, I am more interested in medicine or specifically Medical Technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <div class="container-base">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <h2>My Hobbies and Pastimes</h2>
+      
+        <div class="carousel-item active">
+            <div class="card">
+              <img src="assets/anime/ttiraas.jpeg" style="max-height: 90%;">
+                <a href="anime.html"><p>Anime</p></a>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="card blurred">
+                <img src="assets/manhwa/manhwa.jpg" style="max-height: 90%;">
+                <a href="manhwa.html"><p>Manhwa</p></a>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="card">
+                <img src="assets/codm/codbg.jpg" style="max-height:90%;">
+                <a href="codm.html"><p>Call of Duty Mobile</p></a>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="card">
+                <img src="assets/images.jpeg" style="max-height:90%;">
+                <a href="ml.html"><p>Mobile Legends: Bang Bang</p></a>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="card">
+                <img src="assets/gbg.jpeg" style="max-height:90%;">
+                <a href="genshin.html"><p>Genshin Impact</p></a>
+            </div>
+        </div>
+      
+      <div class="carousel-item">
+            <div class="card p-2 pt-3">
+                <img src="assets/meme/hehe.jpg" style="max-height:90%;"><br><br>
+                <a href="meme.html"><p>Meme</p></a>
+            </div>
+        </div>
+      
+        <div class="carousel-item">
+            <div class="card">
+                <img src="assets/others/6662916.png" style="max-height:90%;"><br><br><br><br>
+                <a href="others.html"><p>Others</p></a>
+            </div>
+        </div>
+    </div>
+  
+<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" style="margin-right: 5px; color: black !important;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only sr-ds" style="color: black !important;">Previous</span>
+</a>
+
+<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" style="margin-left: 5px; color: black !important;">
+    <span class="sr-only" style="color: black !important;">Next</span>
+    <span class="carousel-control-next-icon" style="color: black !important;" aria-hidden="true"></span>
+</a>
+
+
+</div>
+
+  </div>
+
+  
+
+<section id="about" class="container">
+  <div class="col">
+    <h3>Contact Infomation</h3>
+    <div class="row">
+    <div class="col-md-4">
+      <img src="assets/phone.png" style="height:15px;">
+      <p>09949279305</p>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.facebook.com/asi.achii.02?mibextid=ZbWKwL"><img src="assets/fb.png" style="height:15px;">
+      <p>Rusty Castor</p></a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://instagram.com/knightingreycc?igshid=MXc1c2U3d3F3eWY4dQ=="><img src="assets/insta.png" style="height:15px;">
+      <p>@KnightInGreyCC</p></a>
+    </div>
+    </div>
+    <div class="card-black">
+        <div class="card-body">
+            <h5 class="card-title">About Me</h5>
+            <p class="card-text">For more info, you can download my Curriculum Vitae below.</p>
+            <a href="assets/my-resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        </div>
+    </div>
+</section>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<footer><p>Rusty Castor | November 2023</p></footer>
+</center>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
