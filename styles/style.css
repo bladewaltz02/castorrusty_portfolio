@@ -1,14 +1,16 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
     color: #333;
     font-family: 'Arial', sans-serif;
+    font-size: 15px;
     margin: 0;
     padding: 0;
 }
 
 nav {
-    background-color: #333;
+    background-color: #264653;
     padding: 10px;
+    height: 50px;
 }
 
 nav ul {
@@ -25,6 +27,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #fff;
+    font-size: 16px;
 }
 
 /* Updated style for spread-nav */
@@ -37,54 +40,72 @@ nav a {
 .container-base {
     padding: 10px;
     margin: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     display: inline-block;
     width: 720px;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(38, 70, 83, 0.1);
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #333;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(38, 70, 83, 0.1);
+}
+
+.custom-heading {
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    color: #333; /* Change this to your desired color */
-    font-size: 24px; /* Adjust the font size as needed */
-    margin-bottom: 10px; /* Add space below the title */
+    color: #264653;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 28px;
 }
 
 h2 {
-    color: #333;
+    color: #2a9d8f;
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #264653;
 }
 
 .card {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     color: #333;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     margin-bottom: 20px;
     height: 360px;
     width: 200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
 }
 
 .card-title {
-    color: #333;
+    color: #264653;
+    font-size: 18px;
 }
 
 .card-text {
     color: #666;
+    font-size: 14px;
 }
 
 .card-img-top {
     max-height: 200px;
     object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 video {
@@ -125,18 +146,54 @@ video {
     transform: translateX(-100%);
 }
 
+.progress-container {
+    text-align: center;
+}
+
+.progress-item {
+    margin-bottom: 10px;
+}
+
 .progress-label {
     display: inline-block;
     width: 80px;
     text-align: left;
     margin-right: 10px;
-    color: #000;
+    color: #264653;
+    font-size: 14px;
 }
 
-.progress-container .progress-label {
-    color: #000; /* Change this to #000 for black color */
+.progress-bar {
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-footer{
-  color: white;
+.progress-fill {
+    display: block;
+    height: 100%;
+    background-color: #2a9d8f;
+    border-radius: 10px;
+}
+
+footer {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+a {
+    color: #2a9d8f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e76f51;
 }
